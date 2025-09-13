@@ -1,13 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="script.js">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>To‑Do List </title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+  <div class="todo-app" role="application" aria-label="Simple to-do application">
+    <h1>To‑Do List</h1>
+
+    <!-- Form for adding tasks -->
+    <form id="task-form" aria-label="Add new task">
+      <input id="task-input" name="task" type="text" placeholder="Add a new task..." autocomplete="off" required>
+      <button id="add-button" type="submit">Add</button>
+    </form>
+
+    <ul id="task-list" aria-live="polite">
+    </ul>
+
+    <small class="note">Double-click a task to edit. Use the buttons.</small>
+  </div>
+  <script src="script.js" defer></script>
 </body>
 </html>
